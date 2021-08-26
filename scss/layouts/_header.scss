@@ -1,0 +1,34 @@
+#header {
+
+    .holder {
+        @include flex(flex, wrap, center, space-between);
+    }
+    .logo {
+        max-width: 90px;
+        flex-basis: 90px;
+    }
+}
+.nav-drop{
+    .main-menu {
+        @extend %listreset;
+        @include flex(flex, wrap, center, flex-start);
+        flex: 1;
+
+        li {
+            padding: 0 20px;
+            font-size: $rem-base;
+        }
+        a {
+            color: $ebony-clay;
+            text-decoration: none;
+            font-weight: $h2-font-weight;
+
+            &:hover {
+                color: $btn-background;
+                text-decoration: underline;
+                font-weight: $h2-font-weight;
+            }
+        }
+    }
+}
+
